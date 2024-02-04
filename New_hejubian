@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"> 
+    <!--对于中文网页需要使用 <meta charset="utf-8"> 声明编码，否则会出现乱码。-->
+    <meta name="author" content="FunctionGoblin">
+    <title>合聚变主页</title>
+    <style>
+        div {
+            border: 1px solid rgb(255, 255, 255);
+        }
+        body {
+            color:white;
+            text-align:center;
+            
+        }
+    </style>
+    </head>
+    <body>
+        <div id="一二行" style="height:60px;width:1440px;">
+
+            <div id="顶部栏" style="background-color:#FF1CD4;height:60px;width:1440px;">
+                <h1 style="margin-bottom:0;text-align:center;font-family:arial;color:rgb(255, 255, 255);font-size:30px;">合聚变MV</h1>
+                <img border="0" src="C:\Users\19918\Desktop\合聚变logo.png" alt="合聚变Logo" width="30" height="30">
+            </div>
+            <div id="0.0" style="background-color:#9c50ff;height:60px;width:60px;float:left;">九宫格logo</div>    
+            <div id="1.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="2.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="3.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="4.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="5.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="6.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="7.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="8.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="9.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="10.0" style="background-color:#50BFFF;height:60px;width:120px;float:left;"><input type="file" id="videoInput" accept="video/*"></div>
+            <div id="+V1" style="background-color:#000000;height:60px;width:120px;float:left;">+V
+                <input type="file" id="videoInput" accept="video/*">
+                
+                <script>
+                  function mergeVideoAndAudio() {
+                    var videoInput = document.getElementById('videoInput');
+                
+                    var audioFile = audioInput.files[0];
+                
+                    if (!videoFile || !audioFile) {
+                      alert('请选择视频和音乐文件');
+                      return;
+                    }
+                
+                    var videoUrl = URL.createObjectURL(videoFile);
+        
+                  }
+                </script>
+            </div>
+            
+        </div>
+        <div id="M列" style="width:60px;"> 
+            <div id="0.1" style="background-color:#FF1CD4;height:120px;width:60px;float:left;"><input type="file" id="audioInput" accept="audio/*"></div>
+            <div id="0.2" style="background-color:#FF1CD4;height:120px;width:60px;float:left;"><input type="file" id="audioInput" accept="audio/*"></div>
+            <div id="0.3" style="background-color:#FF1CD4;height:120px;width:60px;float:left;"><input type="file" id="audioInput" accept="audio/*"></div>
+            <div id="0.4" style="background-color:#FF1CD4;height:120px;width:60px;float:left;"><input type="file" id="audioInput" accept="audio/*"></div>
+            <div id="0.5" style="background-color:#FF1CD4;height:120px;width:60px;float:left;"><input type="file" id="audioInput" accept="audio/*"></div>
+            <div id="+M" style="background-color:#000000;height:120px;width:60px;float:left;">+M
+                <input type="file" id="audioInput" accept="audio/*">
+                <script>
+                  function mergeVideoAndAudio() {
+                    var audioInput = document.getElementById('audioInput');
+                    var audioFile = audioInput.files[0];
+                    if (!videoFile || !audioFile) {
+                      alert('请选择视频和音乐文件');
+                      return;
+                    }
+                    var audioUrl = URL.createObjectURL(audioFile);
+                  }
+                </script>
+            </div>
+        </div>
+        
+    </body>
+</html>
