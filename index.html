@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="M·PDF的个人名片网站">
+    <title>你好！我是M·PDF</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background: #0D47A1;
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+
+        .intro > p {
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-width: 200px;
+            border-left: 5px solid #1976D2;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .intro > p:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background-color: #0D47A1;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 10px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>你好！请叫我M·PDF</h1>
+    </header>
+    <section class="intro">
+        <p><strong>M-Marketer:</strong> 众所周知，我很喜欢挖掘市场机会，设计合适产品，并以绝妙的营销方案推广给用户。做产品要从市场中来，回到市场中去！所以，名字以Marketer的M开头，很合理吧！</p>
+        <p><strong>P-Producter:</strong> 众所周知，我很喜欢设计产品和解决方案，必须是一个产品狗，所以，名字带个Producter的P，很合理吧！</p>
+        <p><strong>D-Designer:</strong> 众所周知，我对UI/UX/美学方面很感兴趣，一个产品怎么能没有赏心悦目的交互界面和酷酷的交互方式，这个D加入名字中，很合理吧！</p>
+        <p><strong>F-Functioner:</strong> 众所周知，小到1+1=2，大到宇宙万物的构成，都可以看作是数据和函数之间的美妙关系，硅基产品本质上就是一个Function，所以热衷于扣代码来构建硅基产品的我，名字里有个F，这很合理吧！</p>
+    </section>
+    <footer>
+        <p>联系我: 邮箱：<a href="mailto:19918828353@163.com">19918828353@163.com</a>——微信: zbwx626984964——电话: 19918828353</p>
+        <!-- 可以在此添加更多联系方式 -->
+    </footer>
+</body>
+</html>
